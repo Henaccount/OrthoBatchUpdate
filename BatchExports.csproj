@@ -28,6 +28,14 @@
       <HintPath>..\..\..\inc\AcMgd.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="PnPDataObjects">
+      <HintPath>..\..\..\inc-x64\PnPDataObjects.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="PnPDwg2dUtil">
+      <HintPath>..\..\..\..\Program Files\Autodesk\AutoCAD 2025\PLNT3D\PnPDwg2dUtil.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="PnPProjectManagerMgd">
       <HintPath>..\..\..\inc-x64\PnPProjectManagerMgd.dll</HintPath>
       <Private>False</Private>

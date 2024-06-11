@@ -9,12 +9,23 @@ namespace BatchExports
     public class Commands
     {
         #region Commands
-        [CommandMethod("OrthoBatchUpdate", CommandFlags.Session)]
-        public static void OrthoBatchUpdate()
+        [CommandMethod("OrthoBatchUpdateAll", CommandFlags.Session)]
+        public static void OrthoBatchUpdateAll()
         {
-            Program.OrthoBatchUpdate("Ortho");
+            Program.OrthoBatchUpdate(false, false);
         }
 
+        [CommandMethod("OrthoBatchUpdateOnlyModified", CommandFlags.Session)]
+        public static void OrthoBatchUpdateOnly()
+        {
+            Program.OrthoBatchUpdate(true, false);
+        }
+
+        [CommandMethod("OrthoBatchUpdateOnlyModifiedDebug", CommandFlags.Session)]
+        public static void OrthoBatchUpdateOnlyDebug()
+        {
+            Program.OrthoBatchUpdate(true, true);
+        }
         #endregion
     }
 }
